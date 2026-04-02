@@ -8,10 +8,11 @@ import { useContext } from "react";
 
 const Header = () => {
     const { on, toggleTheme, setFont, font } = useContext(AppContext)
-    const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false)
+  
   return (
     <div
-      className={`flex lg:w-full w-100 justify-between items-center ${on ? "bg-black" : "bg-white"}`}
+      className={`flex py-10 px-4 lg:w-full w-100 justify-between items-center ${on ? "bg-black" : "bg-white"}`}
     >
       <nav>
         <RiBook2Line
@@ -38,7 +39,7 @@ const Header = () => {
             className={` border h-6.5 w-12.5 cursor-pointer relative rounded-[20px] ${on ? "bg-green-500" : "bg-gray-500"}`}
           >
             <div
-              className={`w-6 h-5.5 bg-white top-[1px] rounded-[50%] transition-[0.3s] absolute ${on ? "left-[22px]" : "left-[2px]"}`}
+              className={`w-6 h-5.5 bg-white top-[5%] rounded-[50%] transition-[0.3s] absolute ${on ? "left-[50%]" : "left-[1%]"}`}
             ></div>
           </div>
           <div

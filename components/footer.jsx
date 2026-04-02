@@ -7,7 +7,7 @@ const Footer = () => {
   const { data, on } = useContext(AppContext);
 
   return (
-    <div className={`h-20 lg:w-full w-100 px-5 flex items-center z-10 ${on? "text-gray-200" : "text-gray-800"}`}>
+    <div className={`h-20 lg:w-full w-100 px-5 flex items-center ${on? "text-gray-200" : "text-gray-800"}`}>
           <div>
                <p>Source</p>
       <Link href={`${data.sourceUrls}`}>{data?.[0]?.sourceUrls}</Link>
